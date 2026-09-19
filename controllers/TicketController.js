@@ -1,13 +1,21 @@
 const TicketService = require("../services/TicketService");
 const service = new TicketService();
+const NotificationService = require("../services/NotificationService");
+const notificationService = new NotificationService();
 
 exports.create = (req, res) => {
   const ticket = service.createTicket(req.body);
   res.status(201).json(ticket);
 };
 
-exports.list = (req, res) => {
-  res.status(200).json(service.list());
+exports.list = (req, res, next) => {
+    try {
+        const { page, limit } = req.query;
+        const result = service.list(page, limit);
+        res.status(200).json(result);
+    } catch (err) {
+        next(err);
+    }
 };
 
 exports.assign = (req, res) => {
@@ -34,3 +42,19 @@ exports.delete = (req, res) => {
     res.status(404).json({ message: err.message });
   }
 }
+
+exports.getNotificationsByTicket = (req, res, next) => {
+    try {
+        const { id } = req.params;
+        
+        const ticketExists = service.repo.findById(id);
+        if (!ticketExists) {
+            return res.status(404).json({ error: "Ticket no encontrado" });
+        }
+
+        const history = notificationService.getByTicketId(id);
+        res.status(200).json(history);
+    } catch (err) {
+        next(err);
+    }
+};

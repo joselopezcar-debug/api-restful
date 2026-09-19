@@ -19,7 +19,7 @@ class NotificationService {
     
     if (type == "email") {
       this.emailService.sendEmail({ 
-        to: "earevalo@tecsup.edu.pe",
+        to: "jose.lopez.car@tecsup.edu.pe",
         subject: "API RESTful - Alertas del sistema de Tickets", 
         htmlBody: "<h1>" + message + "</h1>" 
       });
@@ -30,6 +30,10 @@ class NotificationService {
 
   list() {
     return this.repo.findAll();
+  }
+
+  getByTicketId(ticketId) {
+    return this.repo.findByTicketId(ticketId);
   }
 }
 module.exports = NotificationService;

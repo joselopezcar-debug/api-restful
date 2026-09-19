@@ -16,6 +16,8 @@ const notificationRoutes = require("./routes/notification.routes");
 app.use("/tickets", ticketRoutes);
 app.use("/notifications", notificationRoutes);
 
+
+
 // Mensaje de prueba en la raíz
 app.get("/", (req, res) => {
   res.send("¡Bienvenido a la API RESTful!");
@@ -25,3 +27,6 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
+const errorHandler = require("./middlewares/errorHandler");
+app.use(errorHandler); 

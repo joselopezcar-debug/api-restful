@@ -40,7 +40,10 @@ class TicketService {
     return ticket;
   }
 
-  list() {
+ list(page, limit) {
+    if (page && limit) {
+        return this.repo.findPaginated(parseInt(page), parseInt(limit));
+    }
     return this.repo.findAll();
   }
 

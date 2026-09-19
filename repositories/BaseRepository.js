@@ -51,6 +51,21 @@ class BaseRepository {
     this._writeDB(db);
     return true;
   }
+
+  findPaginated(page, limit) {
+    const db = this._readDB();
+    const allItems = db[this.entityName];
+    
+    const startIndex = (page - 1) * limit;
+    const endIndex = page * limit;
+    
+    return {
+        totalItems: allItems.length,
+        totalPages: Math.ceil(allItems.length / limit),
+        currentPage: page,
+        data: allItems.slice(startIndex, endIndex)
+    };
+  }
 }
 
 module.exports = BaseRepository;
