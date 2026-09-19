@@ -1,4 +1,154 @@
 {
-  "tickets": [],
-  "notifications": []
+  "tickets": [
+    {
+      "id": "970521a8-dc32-41a4-91b7-af4673ee5539",
+      "title": "Problema 1",
+      "description": "Ocurrió un error en el sistema",
+      "status": "nuevo",
+      "priority": "medium",
+      "assignedUser": null
+    },
+    {
+      "id": "42d76855-079f-4fb9-8fb5-83bada372cde",
+      "title": "Problema 2",
+      "description": "Ocurrió un error en el sistema",
+      "status": "nuevo",
+      "priority": "medium",
+      "assignedUser": null
+    },
+    {
+      "id": "18b37098-a983-4555-8c5f-09b979b03441",
+      "title": "Prueba de Laboratorio - Tu Nombre",
+      "description": "Validando el envío automático de notificaciones por correo",
+      "status": "nuevo",
+      "priority": "medium",
+      "assignedUser": null
+    },
+    {
+      "id": "145b4516-8792-438c-a127-98501f0af765",
+      "title": "Prueba de Laboratorio - Tu Nombre",
+      "description": "Validando el envío automático de notificaciones por correo",
+      "status": "nuevo",
+      "priority": "medium",
+      "assignedUser": null
+    },
+    {
+      "id": "5b69b1ee-1508-47cd-be35-ee0cafab7ed1",
+      "title": "Prueba de Laboratorio - Alonso",
+      "description": "Validando el envío automático de notificaciones por correo",
+      "status": "nuevo",
+      "priority": "medium",
+      "assignedUser": null
+    },
+    {
+      "id": "0acb7487-5fa2-410a-bd67-f078560374f3",
+      "title": "Prueba de Laboratorio - Alonso",
+      "description": "Validando el envío automático de notificaciones por correo",
+      "status": "nuevo",
+      "priority": "medium",
+      "assignedUser": null
+    },
+    {
+      "id": "532d1362-f009-4296-9a2c-e91708d5c25d",
+      "title": "Prueba de Laboratorio - Alonso",
+      "description": "Validando el envío automático de notificaciones por correo",
+      "status": "nuevo",
+      "priority": "medium",
+      "assignedUser": null
+    },
+    {
+      "id": "1b391013-5e3a-41ed-9252-7c96fdfd11c6",
+      "title": "Prueba de Laboratorio - Alonso",
+      "description": "Validando el envío automático de notificaciones por correo",
+      "status": "nuevo",
+      "priority": "medium",
+      "assignedUser": null
+    }
+  ],
+  "notifications": [
+    {
+      "id": "774cd26c-fc63-41e8-af0f-0260c441947f",
+      "type": "email",
+      "message": "Nuevo ticket creado: Problema 1",
+      "status": "pending",
+      "ticketId": "d0996293-d5c9-41bd-9c21-1b7ce7b994be"
+    },
+    {
+      "id": "444bab07-b171-44a5-a88b-a58040fcf5d7",
+      "type": "email",
+      "message": "El ticket d0996293-d5c9-41bd-9c21-1b7ce7b994be fue asignado a José Alonso",
+      "status": "pending",
+      "ticketId": "d0996293-d5c9-41bd-9c21-1b7ce7b994be"
+    },
+    {
+      "id": "270e7423-998a-46d0-9f49-5b7fe33a3b69",
+      "type": "email",
+      "message": "El ticket d0996293-d5c9-41bd-9c21-1b7ce7b994be fue asignado a José Alonso",
+      "status": "pending",
+      "ticketId": "d0996293-d5c9-41bd-9c21-1b7ce7b994be"
+    },
+    {
+      "id": "3c792a82-759e-4531-8e3d-0c754ce41a9b",
+      "type": "push",
+      "message": "El ticket d0996293-d5c9-41bd-9c21-1b7ce7b994be cambió a asignado",
+      "status": "pending",
+      "ticketId": "d0996293-d5c9-41bd-9c21-1b7ce7b994be"
+    },
+    {
+      "id": "157bc500-0c13-4a6c-a54e-ff0ef3d4bfb9",
+      "type": "email",
+      "message": "Nuevo ticket creado: Problema 1",
+      "status": "pending",
+      "ticketId": "970521a8-dc32-41a4-91b7-af4673ee5539"
+    },
+    {
+      "id": "32ac8728-815a-4969-9bae-82b1edc05034",
+      "type": "email",
+      "message": "Nuevo ticket creado: Problema 2",
+      "status": "pending",
+      "ticketId": "42d76855-079f-4fb9-8fb5-83bada372cde"
+    },
+    {
+      "id": "4a1e330a-5b3a-4c13-a80b-bbe76887222b",
+      "type": "email",
+      "message": "Nuevo ticket creado: Prueba de Laboratorio - Tu Nombre",
+      "status": "pending",
+      "ticketId": "18b37098-a983-4555-8c5f-09b979b03441"
+    },
+    {
+      "id": "f54d4c33-a7db-497a-9fd2-339e4eb38d62",
+      "type": "email",
+      "message": "Nuevo ticket creado: Prueba de Laboratorio - Tu Nombre",
+      "status": "pending",
+      "ticketId": "145b4516-8792-438c-a127-98501f0af765"
+    },
+    {
+      "id": "078171d6-594d-4302-9cf0-9118ad861234",
+      "type": "email",
+      "message": "Nuevo ticket creado: Prueba de Laboratorio - Alonso",
+      "status": "pending",
+      "ticketId": "5b69b1ee-1508-47cd-be35-ee0cafab7ed1"
+    },
+    {
+      "id": "21d9779a-8bfd-42c7-8d00-8146145fe85d",
+      "type": "email",
+      "message": "Nuevo ticket creado: Prueba de Laboratorio - Alonso",
+      "status": "pending",
+      "ticketId": "0acb7487-5fa2-410a-bd67-f078560374f3"
+    },
+    {
+      "id": "e4310517-2844-4e91-a2c6-430ee417c4af",
+      "type": "email",
+      "message": "Nuevo ticket creado: Prueba de Laboratorio - Alonso",
+      "status": "pending",
+      "ticketId": "532d1362-f009-4296-9a2c-e91708d5c25d"
+    },
+    {
+      "id": "6ba249aa-ff76-4fc9-a92c-d36bfb4bac1d",
+      "type": "email",
+      "message": "Nuevo ticket creado: Prueba de Laboratorio - Alonso",
+      "status": "pending",
+      "ticketId": "1b391013-5e3a-41ed-9252-7c96fdfd11c6"
+    }
+  ]
 }
